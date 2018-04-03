@@ -1,3 +1,20 @@
 .to-right{
   float: right;
 }
+.to-bottom{
+  position: absolute;
+  bottom: 0px;
+}
+.header{
+  height: 100%;
+  width: 100%;
+}
+.is-circle{
+  border-radius: 50%;
+}
+.header{
+/* background: linear-gradient(rgb(7,207,255) 0%,rgb(245,16,170) 100%); */
+}
+.is-shadowed{
+  box-shadow: 0px 5px 20px rgba(200,200,200,.2);
+}
