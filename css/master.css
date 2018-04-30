@@ -24,6 +24,11 @@ a{
   color: #fff;
 }
 
+body{
+    background: url('../img/texture.png');
+    padding: 0;
+    margin: 0;
+}
 .header{
     padding: 1rem 10%;
     max-width: 1000px;
@@ -32,12 +37,16 @@ a{
 }
 
 #header{
-  height:600px;
   width: 100%;
   background: #000;
-  background-image: url("https://wallup.net/wp-content/uploads/2016/01/259535-abstract-wolf-748x421.jpg") ;
-  background-repeat: no-repeat;
-  background-position: center;
+  padding:20px 0;
+  transform:skewY(-2.5deg);
+  transform-origin: left;
+  height: 500px;
+}
+.skew{
+  transform:skewY(2.5deg);
+  transform-origin: left;
 }
 .main-nav {
     padding: 5px 0;
@@ -48,31 +57,55 @@ a{
     display: inline-block;
     font-size: 14px;
     font-weight: 600;
-    letter-spacing: 2.5px;
+    letter-spacing: 3px;
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     padding: 10px;
+
 }
+.main-nav li a{
+    color: #fff;
+}
+
 .hr{
 border: 0;
 position: relative;
 height: 1px;
 width: 80%;
 margin: 0px auto;
-background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+background-image: linear-gradient(to right, rgba(150, 150, 150, 0), rgba(0, 0, 0, .75), rgba(150, 150, 150, 0));
 }
+
+.hrw{
+border: 0;
+position: relative;
+height: 2px;
+width: 80%;
+margin: 0px auto;
+background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(205, 205, 250, 1), rgba(0,0,0, 0));
+}
+
+.columns{
+  padding: 0px 10%;
+}
+
 @media (max-width : 768px)
- {  .main-nav li{
-  font-size:12px;
-  padding-left:4px;
-  padding-right:4px;
-} 
-.header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.main-nav,.nav-brand{
-  align-self: center;
-}
+ {
+  .main-nav li{
+      font-size:12px;
+      padding-left:4px;
+      padding-right:4px;
+    }
+    .header{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .main-nav,.nav-brand{
+      align-self: center;
+    }
+    .columns{
+      padding:0 5px;
+    }
 }

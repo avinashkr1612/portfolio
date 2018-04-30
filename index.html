@@ -2,53 +2,134 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- <meta http-equiv="refresh" content="4"> -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="css/bulma.css">
-    <link rel="stylesheet" href="css/master.css">
-  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-<body>
-<div id="header"> 
-<nav class="header" >
-     <a href="" class="nav-brand">
-      <img src="img/logo2.PNG" alt="mridul logo" style="height:40px;float:left;padding-left:20px;">
-    </a>
-    <ul class="main-nav">
-      <li>
-        <a href="#">Profile</a>
-      </li>
+  <meta http-equiv="refresh" content="4">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bulma.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <body>
+      <div id="header">
+        <nav class="header skew" >
+          <a href="" class="nav-brand">
+            <img src="img/logo2.PNG" alt="mridul logo" style="height:40px;float:left;padding-left:20px;">
+          </a>
+          <ul class="main-nav">
             <li>
-        <a class="active" href="#">Work</a>
-      </li>
+              <a href="#">Profile</a>
+            </li>
             <li>
-        <a href="#">Blog</a>
-      </li>
+              <a class="active" href="#">Work</a>
+            </li>
             <li>
-        <a href="#">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <hr class="hr">
-  <br><br>
-  <div class="container">
-    <div class="title is-3 has-text-centered has-text-light">
-        HELLO THERE, I'M MRIDUL. I MAKE DESIGNS FOR THE WEB. 
-    </div>
-  </div>
-</div>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <hr class="hrw skew">
+        <br><br>
+          <div class="columns skew">
+            <div class="column has-text-centered is-three-fifths">
+              <p class="subtitle is-1">
+                hey i'm <span class="has-text-primary">Mridul</span>
+              </p>
+              <p class="subtitle is-4">
+                I'm a <span class="has-text-primary">Graphic Designer</span> with a combined skill-set of <span class="has-text-primary"> Digital Design,</span> (Frontend/Backend) coding and <span class="has-text-primary">Digital Marketing</span>.
+              </p>
+              <a href="" class="button is-primary is-medium" style="font-family: Poppins">GET IN TOUCH</a>
+            </div>
+            <div class="column">
+
+            </div>
+          </div>
+
+
+      </div>
+    <section class="what-we-do">
+      <div class="hero">
+        <div class="has-text-centered">
+          <p class="subtitle is-1">
+            what do we <strong class="has-text-primary"> actually </strong> do
+          </p>
+          <hr class="hr">
+          <br>
+          <br>
+          <div class="columns">
+            <div class="column">
+              <div class="media">
+           <div class="media-left" style="padding-top:10px;">
+               <img src="img/svg/layout.svg" height="100px" width="100px">
+           </div>
+         <div class="media-content" style="overflow:hidden;padding:20px;">
+          <p class="title is-4">
+             <strong>UX/UI Design</strong>
+           </p >
+           <p class="subtitle is-5">User Interface (UI) , User Experience (UX) Design</p>
+         </div>
+       </div>
+            </div>
+            <div class="column">
+              <div class="media">
+           <div class="media-left" style="padding-top:10px;">
+               <img src="img/svg/web-design.svg" height="100px" width="100px">
+           </div>
+         <div class="media-content" style="overflow:hidden;padding:20px;">
+          <p class="title is-4">
+             <strong>Web Design</strong>
+           </p >
+           <p class="subtitle is-5">User Interface (UI) , User Experience (UX) Design</p>
+         </div>
+       </div>
+            </div>
+          </div>
+          <br>
+          <div class="columns">
+            <div class="column">
+              <div class="media">
+           <div class="media-left" style="padding-top:10px;">
+               <img src="img/svg/uidesign.svg" height="100px" width="100px">
+           </div>
+         <div class="media-content" style="overflow:hidden;padding:20px;">
+          <p class="title is-4">
+             <strong>UX/UI Design</strong>
+           </p >
+           <p class="subtitle is-5">User Interface (UI) , User Experience (UX) Design</p>
+         </div>
+       </div>
+            </div>
+            <div class="column">
+              <div class="media">
+           <div class="media-left" style="padding-top:10px;">
+               <img src="img/svg/uidesign.svg" height="100px" width="100px">
+           </div>
+         <div class="media-content" style="overflow:hidden;padding:20px;">
+          <p class="title is-4">
+             <strong>UX/UI Design</strong>
+           </p >
+           <p class="subtitle is-5">User Interface (UI) , User Experience (UX) Design</p>
+         </div>
+       </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
 
+    <script>
+    $(window).scroll(function () {
 
-
-<script>
-  $(window).scroll(function () {
-
-    var wScroll = $(window).scrollTop();
-    $('.parallax--bg').css('background-position', 'center ' + (-wScroll * 0.05) + 'px');
-    $('.parallax--box').css('top', -5 + (wScroll * 0.005) + 'em');
-  })
-</script>
+      var wScroll = $(window).scrollTop();
+      $('.parallax--bg').css('background-position', 'center ' + (-wScroll * 0.05) + 'px');
+      $('.parallax--box').css('top', -5 + (wScroll * 0.005) + 'em');
+    })
+  </script>
 </body>
 </html>
